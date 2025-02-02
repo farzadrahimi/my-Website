@@ -1,140 +1,150 @@
 <!DOCTYPE html>
-<!-- تعیین نوع سند به عنوان HTML5 -->
 <html lang="en" dir="ltr">
-<!-- زبان اصلی صفحه انگلیسی و جهت متن چپ به راست -->
 
 <head>
-  <!-- بخش متادیتا و اطلاعات صفحه -->
   <meta charset="utf-8">
-  <!-- تعیین encoding صفحه -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- تنظیم حالت سازگاری با آخرین نسخه IE -->
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <!-- تنظیم viewport برای واکنشگرایی -->
-  <meta name="description" content="Portfolio of Farzad Rahimi - Programmer, SysAdmin, and Graphic Designer">
-  <!-- توضیحات سئو -->
+  <meta name="description" content="Farzad Rahimi is a skilled Programmer, SysAdmin, and Graphic Designer with over 17 years of experience. Explore my portfolio showcasing web development, system administration, and graphic design projects. فرزاد رحیمی، برنامه نویس، مدیر سیستم و طراح گرافیک با بیش از ۱۷ سال تجربه. نمونه کارهای من در زمینه توسعه وب، مدیریت سیستم و طراحی گرافیک را بررسی کنید.">
   <meta name="author" content="Farzad Rahimi">
-  <!-- اطلاعات نویسنده صفحه -->
-
-  <!-- Open Graph meta tags برای اشتراک گذاری در شبکه های اجتماعی -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Farzad Rahimi - فرزاد رحیمی">
-  <meta property="og:description" content="Portfolio of Farzad Rahimi - Programmer, SysAdmin, and Graphic Designer">
-  <meta property="og:image" content="https://yourdomain.com/assets/img/jpg/Farzad-Rahimi.jpg">
-  <meta property="og:url" content="https://yourdomain.com/">
-
-  <!-- Twitter meta tags برای نمایش بهتر در توییتر -->
+  <meta property="og:description" content="Farzad Rahimi is a skilled Programmer, SysAdmin, and Graphic Designer with over 17 years of experience. Explore my portfolio showcasing web development, system administration, and graphic design projects. فرزاد رحیمی، برنامه نویس، مدیر سیستم و طراح گرافیک با بیش از ۱۷ سال تجربه. نمونه کارهای من در زمینه توسعه وب، مدیریت سیستم و طراحی گرافیک را بررسی کنید.">
+  <meta property="og:image" content="http://farzadrahimi.ir/assets/img/jpg/Farzad-Rahimi.jpg">
+  <meta property="og:url" content="http://farzadrahimi.ir/">
   <meta name="twitter:card" content="summary_large_image">
-  
-  <!-- لینک فاوآیکون -->
   <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
-  
-  <!-- پیش بارگذاری و استایل های اصلی -->
   <link rel="preload" href="./assets/css/main.css" as="style">
   <link rel="stylesheet" href="./assets/css/main.css">
-  
-  <!-- فونت Vazirmatn برای پشتیبانی از فارسی -->
   <link rel="preload" href="./assets/css/Vazirmatn-font-face.css" as="style">
   <link rel="stylesheet" href="./assets/css/Vazirmatn-font-face.css">
-  
-  <title>Farzad Rahimi - فرزاد رحیمی</title>
-  
-  <!-- استایل های داخلی برای انیمیشن ها -->
+  <title>Farzad Rahimi - Programmer, SysAdmin & Graphic Designer Portfolio - فرزاد رحیمی - نمونه کارها</title>
   <style>
-    /* انیمیشن fade-in برای تصویر پروفایل */
-    @keyframes f{0%{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
-    
-    /* انیمیشن bounce برای دکمه اسکرول */
-    @keyframes b{0%,20%,50%,80%,to{transform:translateY(0)}40%{transform:translateY(-15px)}60%{transform:translateY(-7px)}}
-    
-    /* انیمیشن pulse برای هایلایت تصویر */
-    @keyframes p{0%,to{box-shadow:0 0 10px rgba(0,150,255,.4)}50%{box-shadow:0 0 20px rgba(0,150,255,.8)}}
-    
-    /* استایل تصویر پروفایل با انیمیشن ها */
-    .profile-image{
-      animation: f 1s ease-out both, p 2s infinite;
-      transition:transform .3s ease,box-shadow .3s ease;
-      border:2px solid transparent;
-      border-radius:50%;
-      will-change:transform,box-shadow
+    @keyframes f {
+      0% {
+        opacity: 0;
+        transform: translateY(20px)
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0)
+      }
     }
-    
-    /* افکت hover روی تصویر */
-    .profile-image:hover{transform:scale(1.05) rotate(2deg)}
-    
-    /* استایل دکمه اسکرول پایین */
-    .down{animation:b 2s infinite;transition:color .3s ease}
-    .down:hover{color:#4a90e2}
-    
-    /* غیرفعال کردن انیمیشن ها برای کاربران با تنظیمات کاهش حرکت */
-    @media (prefers-reduced-motion:reduce){
-      .profile-image,.down{animation:none!important;transition:none!important}
+
+    @keyframes b {
+      0%,
+      20%,
+      50%,
+      80%,
+      to {
+        transform: translateY(0)
+      }
+      40% {
+        transform: translateY(-15px)
+      }
+      60% {
+        transform: translateY(-7px)
+      }
+    }
+
+    @keyframes p {
+      0%,
+      to {
+        box-shadow: 0 0 10px rgba(0, 150, 255, .4)
+      }
+      50% {
+        box-shadow: 0 0 20px rgba(0, 150, 255, .8)
+      }
+    }
+
+    .profile-image {
+      animation: f 1s ease-out both, p 2s infinite;
+      transition: transform .3s ease, box-shadow .3s ease;
+      border: 2px solid transparent;
+      border-radius: 50%;
+      will-change: transform, box-shadow
+    }
+
+    .profile-image:hover {
+      transform: scale(1.05) rotate(2deg)
+    }
+
+    .down {
+      animation: b 2s infinite;
+      transition: color .3s ease
+    }
+
+    .down:hover {
+      color: #4a90e2
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .profile-image,
+      .down {
+        animation: none !important;
+        transition: none !important
+      }
+    }
+
+    .profile-image {
+      border-radius: 50%;
+      width: 40%;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .profile-image:hover {
+      transform: scale(1.05) rotate(2deg);
+      box-shadow: 0 0 10px rgba(0, 150, 255, 0.4);
     }
   </style>
 </head>
 
 <body>
-  <!-- بخش ذرات پس زمینه -->
   <div id="particles-js">
-    <!-- هدر اصلی سایت -->
     <header class="header">
       <h1>
         <span class="site-title">Farzad Rahimi</span>
         <span class="site-description">Programmer • SysAdmin • Graphic Designer</span>
       </h1>
-      
-      <!-- آیکون های شبکه های اجتماعی -->
       <nav class="header-icons" aria-label="Social media links">
         <a target="_blank" rel="noopener noreferrer" href="https://ir.linkedin.com/in/farzad-rahimi" aria-label="LinkedIn"><i class="icon fa fa-linkedin"></i></a>
         <a target="_blank" rel="noopener noreferrer" href="https://github.com/farzadrahimi" aria-label="GitHub"><i class="icon fa fa-github-alt"></i></a>
-        <a target="_blank" rel="noopener noreferrer" href="https://t.me/+989191815030" aria-label="Telegram"><i class="icon fa fa-telegram"></i></a>        
+        <a target="_blank" rel="noopener noreferrer" href="https://t.me/+989191815030" aria-label="Telegram"><i class="icon fa fa-telegram"></i></a>
         <a target="_blank" rel="noopener noreferrer" href="https://wa.me/989191815030" aria-label="WhatsApp"><i class="icon fa fa-whatsapp"></i></a>
         <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/farzad.rahiimii/" aria-label="Instagram"><i class="icon fa fa-instagram"></i></a>
         <a target="_blank" rel="noopener noreferrer" href="mailto:farzad.rahimi@outlook.com" aria-label="Email"><i class="icon fa fa-envelope"></i></a>
       </nav>
-
-      <!-- لینک های ناوبری -->
       <nav class="header-links" aria-label="Page navigation">
         <a class="link" href="#about" data-scroll>About Me</a>
       </nav>
     </header>
-    
-    <!-- دکمه اسکرول پایین -->
     <a class="down" href="#about" data-scroll aria-label="Scroll down"><i class="icon fa fa-chevron-down"></i></a>
   </div>
 
-  <!-- بخش درباره من -->
   <section id="about">
     <div class="user-details">
-      <h1>About Me - درباره ی من</h1>
-      
-      <!-- تصویر پروفایل با منابع مختلف -->
+      <h2>About Me - درباره ی من</h2>
       <picture>
-        <source type="image/webp" srcset="./assets/img/webp/Farzad-Rahimi.webp 1x, ./assets/img/webp/Farzad-Rahimi@2x.webp 2x" width="200" height="200">
-        <source type="image/jpeg" srcset="./assets/img/jpg/Farzad-Rahimi.jpg 1x, ./assets/img/jpg/Farzad-Rahimi@2x.jpg 2x" width="200" height="200">
-        <img src="./assets/img/jpg/Farzad-Rahimi.jpg" alt="Professional portrait of Farzad Rahimi" width="200" height="200" loading="lazy" class="profile-image">
+        <source type="image/webp" srcset="./assets/img/webp/Farzad-Rahimi.webp" alt="Professional Me" class="profile-image">
+        <img src="./assets/img/jpg/Farzad-Rahimi.jpg" alt="Professional Me" class="profile-image">
       </picture>
-      
-      <!-- بیوگرافی دو زبانه -->
       <div class="bio">
         <p lang="en">Hi, I'm Farzad Rahimi. Since 2006, I've been professionally working in various IT fields including computer systems, programming, system administration, graphic design, and application development.</p>
         <p lang="fa" dir="rtl">سلام، من فرزاد رحیمی هستم. از سال ۲۰۰۶ به صورت حرفه‌ای در زمینه‌های مختلف فناوری اطلاعات، از جمله سیستم‌های کامپیوتری، برنامه‌نویسی، مدیریت سیستم، طراحی گرافیک و توسعه برنامه‌ها فعالیت می‌کنم.</p>
       </div>
     </div>
   </section>
-  
-  <!-- فوتر سایت -->
+
   <footer class="footer">
     <p>Copyright &copy; <span id="current-year"></span> MIT License • Made with ❤️ on <a href="https://github.com/farzadrahimi" target="_blank" rel="noopener noreferrer">GitHub</a></p>
   </footer>
 
-  <!-- اسکریپت های سایت -->
-  <script src="./assets/js/particles.min.js" defer></script> <!-- کتابخانه افکت ذرات -->
-  <script src="./assets/js/sweet-scroll.min.js" defer></script> <!-- کتابخانه اسکرول نرم -->
-  <script src="./assets/js/main.js" defer></script> <!-- اسکریپت های اختصاصی -->
+  <script src="./assets/js/particles.min.js" defer></script>
+  <script src="./assets/js/sweet-scroll.min.js" defer></script>
+  <script src="./assets/js/main.js" defer></script>
   <script>
-    // بروزرسانی خودکار سال کپی رایت
     document.getElementById('current-year').textContent = new Date().getFullYear();
   </script>
 </body>
+
 </html>
